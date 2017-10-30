@@ -1,3 +1,4 @@
+
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -5,8 +6,8 @@
 		<meta name="viewport" content="width=device-width"/>
 		<title>Заголовок</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -23,7 +24,7 @@
 				<div class="Nav">
 					<ul>
 						<li><a href="index.html">О нас</a></li>
-						<li><a href="doctors.html">Врачи</a></li>
+						<li><a href="#">Врачи</a></li>
 						<li><a href="#">Статьи</a></li>
 						<li><a href="#">Регистрация</a></li>
 						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
@@ -117,6 +118,31 @@
 			</div>
 		</div>
 	</div>
+	</section>
+	<section class="Form_of_visitation">
+		<div class="Form_of_visitation_title">
+			<div>
+				<h2>Запишитель на прием прямо сейчас</h2>
+				<p>Какой-то текст, описывает какая классная у нас клиника, много качественных услуг она предлагает, и еще много много всего</p>
+			</div>
+		</div>
+		<form>
+			<input type="text" name="name" id="name" value="" size="25" placeholder="Введите имя" />
+			<input type="text" name="second_name" id="second_name" value="" size="25" placeholder="Ведите фамилию" /><br>
+			<select name="type_of_visitation">
+				<option selected="selected">Тип посещения</option>
+				<option >Снимок</option>
+				<option >Хирургия</option>
+				<option>Осмотр</option>
+			</select>
+			<select name="type_of_doctor" >
+				<option selected="selected">Выбор врача</option>
+				<option >Синенко А.Л.</option>
+				<option >Марченко С.Н</option>
+				<option>Кириенко Р.Т.</option>
+			</select><br>
+			<button type="submit" form="form1" value="Submit">Записатсья</button>
+		</form>
 	</section>
 	<script src="js/common.js"></script>	
 	</body>
