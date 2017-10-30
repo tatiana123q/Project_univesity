@@ -1,0 +1,19 @@
+
+.doctors{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	}
+.doctor{
+	padding: 30px;
+	}
+.doctor p{
+	max-width: 300px;
+	}
+.Our_doctors h1{
+	text-align: center;
+	padding: 40px;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+}
