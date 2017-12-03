@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 		</div>
-			<section class="HomeInfotmation">
+			<section class="Infotmation">
 			<div class="container">
 				<div class="HomeInfotmation-wrapper">
 					<div class="HomeInfotmation-contacts">
@@ -56,7 +57,7 @@
 						<a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="HomeInfotmation-title">
+				<div class="Infotmation-title">
 					<span>Стоматологическая клиника heathteath</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
@@ -69,33 +70,62 @@
 		<h1> Наши врачи</h1>
 		<section class="doctors">
 			<div class="doctor">
-				<img src="img/vrach1.jpg" alt="альтернативный текст" height="400" width="300"/>
+				<img src="img/vrach1.jpg" alt="альтернативный текст" height="340" width="240" />
 				<h4>Петрова Василина Генадьевна</h4>
 				<p>Врач професор высшей категории, и много всего бла бла текст</p>
 			</div>
 			<div class="doctor">
-				<img src="img/vrach2.jpg" alt="альтернативный текст"  height="400" width="300" />
+				<img src="img/vrach2.jpg" alt="альтернативный текст"  height="340" width="240" />
 				<h4>Петрова Василина Генадьевна</h4>
 				<p>Врач професор высшей категории</p>
 			</div>
 			<div class="doctor">
-				<img src="img/vrach3.jpg" alt="альтернативный текст"  height="400" width="300" />
+				<img src="img/vrach3.jpg" alt="альтернативный текст"  height="340" width="240"  />
 				<h4>Петрова Василина Генадьевна</h4>
 				<p>Врач професор высшей категории</p>
 			</div>
 			<div class="doctor">
-				<img src="img/vrach4.jpeg" alt="альтернативный текст"   height="400" width="300"/>
+				<img src="img/vrach4.jpeg" alt="альтернативный текст"  height="340" width="240" />
 				<h4>Петрова Василина Генадьевна</h4>
 				<p>Врач професор высшей категории</p>
 			</div>
 			<div class="doctor">
-				<img src="img/vrach5.jpeg" alt="альтернативный текст" height="400" width="300"/>
+				<img src="img/vrach5.jpeg" alt="альтернативный текст" height="340" width="240" />
+				<h4>Петрова Василина Генадьевна</h4>
+				<p>Врач професор высшей категории</p>
+			</div>
+			<div class="doctor">
+				<img src="img/vrach6.jpg" alt="альтернативный текст" height="340" width="240" />
 				<h4>Петрова Василина Генадьевна</h4>
 				<p>Врач професор высшей категории</p>
 			</div>
 		</section>
 	</section>
-		
+		<section class="Form_of_visitation">
+		<div class="Form_of_visitation_title">
+			<div>
+				<h2>Запишитель на прием прямо сейчас</h2>
+				<p>Какой-то текст, описывает какая классная у нас клиника, много качественных услуг она предлагает, и еще много много всего</p>
+			</div>
+		</div>
+		<form>
+			<input type="text" name="name" id="name" value="" size="25" placeholder="Введите имя" />
+			<input type="text" name="second_name" id="second_name" value="" size="25" placeholder="Ведите фамилию" /><br>
+			<select name="type_of_visitation">
+				<option selected="selected">Тип посещения</option>
+				<option >Снимок</option>
+				<option >Хирургия</option>
+				<option>Осмотр</option>
+			</select>
+			<select name="type_of_doctor" >
+				<option selected="selected">Выбор врача</option>
+				<option >Синенко А.Л.</option>
+				<option >Марченко С.Н</option>
+				<option>Кириенко Р.Т.</option>
+			</select><br>
+			<button type="submit" form="form1" value="Submit">Записатсья</button>
+		</form>
+	</section>
 	<script src="js/common.js"></script>	
 	</body>
 </html>
