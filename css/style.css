@@ -30,6 +30,16 @@
 .Nav ul li a:hover{
 	color: #00C3D9;
 }
+.callback{
+	position: fixed;
+	background: url('../img/phone.png');
+	top:75%;
+	right: 4%;
+	border-radius: 50px;
+	border: none;
+	box-shadow:  0 0 12px rgba(0,0,0,0.5);
+	cursor:pointer;
+}
 
 
 
