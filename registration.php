@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
+		<link rel="stylesheet" href="css/registration.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -68,42 +69,31 @@
 			</div>
 			</section>
 	</header>
-	<section class="Our_doctors">
-		<h1> Наши врачи</h1>
-		<section class="doctors">
-			<div class="doctor">
-				<img src="img/vrach1.jpg" alt="альтернативный текст" height="340" width="240" />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории, и много всего бла бла текст</p>
+	<section class="Form_of_registration">
+		<h2>Регистрация</h2>
+		<form class="Registration">
+			<div class="col">
+				<p>Ваше имя</p>
+				<input type="text" name="name_registration" id="name_registration" value="" size="25" placeholder="Введите имя" />
 			</div>
-			<div class="doctor">
-				<img src="img/vrach2.jpg" alt="альтернативный текст"  height="340" width="240" />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории</p>
+			<div class="col">
+				<p>Ваша фамилия</p>
+				<input type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" />
 			</div>
-			<div class="doctor">
-				<img src="img/vrach3.jpg" alt="альтернативный текст"  height="340" width="240"  />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории</p>
+			<div class="col">
+				<p>Телефон</p>
+				<input type="tel" name="phone" id="phone" size="25" placeholder="Введите телефон" />
 			</div>
-			<div class="doctor">
-				<img src="img/vrach4.jpeg" alt="альтернативный текст"  height="340" width="240" />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории</p>
+			<div class="col">
+				<p>E-mail</p>
+				<input type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" />
 			</div>
-			<div class="doctor">
-				<img src="img/vrach5.jpeg" alt="альтернативный текст" height="340" width="240" />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории</p>
+			<div class="but">
+				<button type="submit" form="feedback-form" value="Submit">Зарегестрироваться</button>
 			</div>
-			<div class="doctor">
-				<img src="img/vrach6.jpg" alt="альтернативный текст" height="340" width="240" />
-				<h4>Петрова Василина Генадьевна</h4>
-				<p>Врач професор высшей категории</p>
-			</div>
-		</section>
+		</form>
 	</section>
-<section class="Form_of_visitation">
+	<section class="Form_of_visitation">
 		<div class="Form_of_visitation_title">
 			<div>
 				<h2>Запишитесь на прием прямо сейчас</h2>
