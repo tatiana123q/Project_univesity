@@ -151,7 +151,7 @@
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
 		</form>
 	</section>
-	<button class="callback"><a type="button" id="popup__toggle"><img src="img/phone.png" width="90px" height="90px"></a></button>
+	<button class="callback"><a id="popup__toggle"><img src="img/phone.png" width="90px" height="90px"></a></button>
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
