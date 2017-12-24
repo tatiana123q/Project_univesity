@@ -6,10 +6,9 @@
 		<meta name="viewport" content="width=device-width"/>
 		<title>HealthyTeeth</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
-		<link rel="stylesheet" href="css/reviews.css" />
+		<link rel="stylesheet" href="css/personal_area.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -60,35 +59,24 @@
 						<a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="Infotmation-title">
-					<span>Стоматологическая клиника heathyteath</span>
-				</div>
-				<div class="HomeInfotmation-way_to_form">
-					<button>записаться</button>
-				</div>
 			</div>
 			</section>
 	</header>
-	<section class="Reviews">
-		<h2>Оставьте отзыв о нашей клинике</h2>
-		<div class="New_coment">
-			<div class="foto">
-				<img src="img/user.png" width="100px" height="100px">
+	<section class="Personal_area">
+		<h2>Добро пожаловать в личный кабинет!</h2>
+		<div class="Personal_information">
+			<div class="col last_visits">
+				<h3>Последние визиты</h3><hr>
+				<p>какой-то текст с базы даных</p>
 			</div>
-			<div class="coment">
-				<textarea placeholder="Введите ваш коментарий" rows="6" cols="70">
-				</textarea><br>
+			<div class="col condition_of_teeth">
+				<h3>Состояние зубов</h3><hr>
+				<p>какой-то текст с базы даных</p>
 			</div>
-		</div>
-		<div class="submit">
-			<input type="text" name="name_review" id="name_review" value="" size="25" placeholder="Введите имя и фамилию" />
-			<select name="type_of_doctor review" >
-					<option selected="selected">Выбор врача</option>
-					<option >Синенко А.Л.</option>
-					<option >Марченко С.Н</option>
-					<option>Кириенко Р.Т.</option>
-			</select>
-			<button>отпавить</button>
+			<div class="col recomendations">
+				<h3>Рекомендации</h3><hr>
+				<p>какой-то текст с базы даных</p>
+			</div>
 		</div>
 	</section>
 	<section class="Form_of_visitation">
