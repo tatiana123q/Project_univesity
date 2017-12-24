@@ -29,8 +29,8 @@
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
-						<li><a href="#">Регистрация</a></li>
-						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+						<li><a href="registration.php">Регистрация</a></li>
+						<li><a href="personal_area.php"><i class="fa fa-user" aria-hidden="true"></i>
 </a></li>
 					</ul>
 				</div>

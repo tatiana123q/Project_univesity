@@ -90,5 +90,10 @@ section.HomeInfotmation{
 	color:#689c1f;
 	cursor: pointer;
 }
+.HomeServises .container .style{
+	display: none;
+	padding: 20px 45px 20px 45px;
+	font-size: 18px;
+}
 
 

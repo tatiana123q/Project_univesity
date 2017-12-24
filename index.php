@@ -13,6 +13,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<body>
 	<header class="Header">
 		<div class="container">
@@ -29,8 +30,8 @@
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
-						<li><a href="#">Регистрация</a></li>
-						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+						<li><a href="registration.php">Регистрация</a></li>
+						<li><a href="personal_area.php"><i class="fa fa-user" aria-hidden="true"></i>
 </a></li>
 					</ul>
 				</div>
@@ -72,31 +73,51 @@
 	<div class="container">
 		<div class="HomeServises-title">
 		<span >Услуги и ценовая политика</span></div>
-		<div class="HomeServises-item">
-			<div class="HomeServises-name">
+		<div class="HomeServises-item first">
+			<div class="HomeServises-name ">
 				<img src="icons/diagnostika.svg" height="110" width="110">
 				<span>Диагностика зубов</span>
 			</div>
-			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			<div class="HomeServises-more second"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="HomeServises-item">
-			<div class="HomeServises-name">
+		<div class="description_first style">
+				<p>
+					Забудьте об устаревшем пленочном рентгене, который используют государственные и большинство частных клиник – он дает крайне мало информации из-за отсутствия возможности увеличения отпечатка на пленке. Мы используем радиовизиограф, который позволяет изготовить прицельный цифровой снимок вашего зуба и сразу вывести его на экран. Во время консультации врач увеличивает снимок с целью выявления малейших недостатков и предлагает вам варианты лечения.
+				</p>	
+		</div>
+		<div class="HomeServises-item second">
+			<div class="HomeServises-name ">
 				<img src="icons/brecets.svg" height="110" width="110">
 				<span>Ортодонт. Исправление прикуса</span>
 			</div>
-			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			<div class="HomeServises-more fourth"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="HomeServises-item">
-			<div class="HomeServises-name">
+		<div class="description_second style">
+				<p>
+					Один из самых эффективных и популярных на сегодняшний день способов исправления прикуса – брекеты. В переводе с английского bracket означает «замок» или «скоба». Название отражает суть устройства: оно состоит из скобок, соединенных силовой дугой. Скобки прикрепляются к зубам специальным клеем, а под воздействием дуги зубы занимают нужное положение.
+				</p>	
+		</div>
+		<div class="HomeServises-item thirth">
+			<div class="HomeServises-name ">
 				<img src="icons/implantant.svg" height="110" width="110">
 				<span>Имплантация зубов</span>
 			</div>
 			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="HomeServises-item">
+		<div class="description_thirth style">
+			<p>
+				Перед постановкой имплантатов необходимой процедурой является профессиональная гигиена полости рта и обследование состояния костной ткани с помощью компьютерной томографии.
+				Сама процедура состоит из двух этапов (реже с одного – определяется индивидуально врачом — имплантологом):
+				1. Хирургический (вживление имплантата в костную ткань, установка формирователя десны);
+				2. Ортопедический (установка коронки и абатмента).
+				Хирургический этап проводится под местным наркозом (в редких случаях пациентам предлагается общий наркоз) в амбулаторных условиях клиники.
+				Эти два этапа занимают от 3-6 месяцев и позволяют провести максимально физиологичное восстановление зубного ряда.
+			</p>		
+		</div>
+		<div class="HomeServises-item fourth">
 			<div class="HomeServises-name">
 				<img src="icons/mirrow.png" height="110" width="110">
 				<span>Терапевтическая стоматология</span>
@@ -104,21 +125,41 @@
 			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="HomeServises-item">
-			<div class="HomeServises-name">
+		<div class="description_fourth style">
+			<p>
+				Забудьте об устаревшем пленочном рентгене, который используют государственные и большинство частных клиник – он дает крайне мало информации из-за отсутствия возможности увеличения отпечатка на пленке. Мы используем радиовизиограф, который позволяет изготовить прицельный цифровой снимок вашего зуба и сразу вывести его на экран. Во время консультации врач увеличивает снимок с целью выявления малейших недостатков и предлагает вам варианты лечения.
+			</p>		
+		</div>
+		<div class="HomeServises-item fifth">
+			<div class="HomeServises-name ">
 				<img src="icons/ukol.svg" height="110" width="110">
 				<span>Хирургия. Удаление зубов и кист</span>
 			</div>
 			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="HomeServises-item">
+		<div class="description_fifth style">
+			<p>
+				Один из самых эффективных и популярных на сегодняшний день способов исправления прикуса – брекеты. В переводе с английского bracket означает «замок» или «скоба». Название отражает суть устройства: оно состоит из скобок, соединенных силовой дугой. Скобки прикрепляются к зубам специальным клеем, а под воздействием дуги зубы занимают нужное положение.
+			</p>	
+		</div>
+		<div class="HomeServises-item sixth">
 			<div class="HomeServises-name">
 				<img src="icons/diamon.svg" height="110" width="110">
 				<span>Эстетическая стоматология</span>
 			</div>
 			<div class="HomeServises-more"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
+		</div>
+		<div class="description_sixth style">
+			<p>
+				Перед постановкой имплантатов необходимой процедурой является профессиональная гигиена полости рта и обследование состояния костной ткани с помощью компьютерной томографии.
+				Сама процедура состоит из двух этапов (реже с одного – определяется индивидуально врачом — имплантологом):
+				1. Хирургический (вживление имплантата в костную ткань, установка формирователя десны);
+				2. Ортопедический (установка коронки и абатмента).
+				Хирургический этап проводится под местным наркозом (в редких случаях пациентам предлагается общий наркоз) в амбулаторных условиях клиники.
+				Эти два этапа занимают от 3-6 месяцев и позволяют провести максимально физиологичное восстановление зубного ряда.
+			</p>		
 		</div>
 	</div>
 	</section>

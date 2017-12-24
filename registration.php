@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
-		<link rel="stylesheet" href="css/reviews.css" />
+		<link rel="stylesheet" href="css/registration.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -69,27 +69,29 @@
 			</div>
 			</section>
 	</header>
-	<section class="Reviews">
-		<h2>Оставьте отзыв о нашей клинике</h2>
-		<div class="New_coment">
-			<div class="foto">
-				<img src="img/user.png" width="100px" height="100px">
+	<section class="Form_of_registration">
+		<h2>Регистрация</h2>
+		<form class="Registration">
+			<div class="col">
+				<p>Ваше имя</p>
+				<input type="text" name="name_registration" id="name_registration" value="" size="25" placeholder="Введите имя" />
 			</div>
-			<div class="coment">
-				<textarea placeholder="Введите ваш коментарий" rows="6" cols="70">
-				</textarea><br>
+			<div class="col">
+				<p>Ваша фамилия</p>
+				<input type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" />
 			</div>
-		</div>
-		<div class="submit">
-			<input type="text" name="name_review" id="name_review" value="" size="25" placeholder="Введите имя и фамилию" />
-			<select name="type_of_doctor review" >
-					<option selected="selected">Выбор врача</option>
-					<option >Синенко А.Л.</option>
-					<option >Марченко С.Н</option>
-					<option>Кириенко Р.Т.</option>
-			</select>
-			<button>отпавить</button>
-		</div>
+			<div class="col">
+				<p>Телефон</p>
+				<input type="tel" name="phone" id="phone" size="25" placeholder="Введите телефон" />
+			</div>
+			<div class="col">
+				<p>E-mail</p>
+				<input type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" />
+			</div>
+			<div class="but">
+				<button type="submit" form="feedback-form" value="Submit">Зарегестрироваться</button>
+			</div>
+		</form>
 	</section>
 	<section class="Form_of_visitation">
 		<div class="Form_of_visitation_title">
