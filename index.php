@@ -61,7 +61,7 @@
 					</div>
 				</div>
 				<div class="HomeInfotmation-title">
-					<span>Стоматологическая клиника heathyteath</span>
+					<span>Стоматологическая клиника heathyteeth</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
 					<a href="#form1"><button>записаться</button></a>

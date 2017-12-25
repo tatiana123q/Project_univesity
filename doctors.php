@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
+		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -60,7 +61,7 @@
 					</div>
 				</div>
 				<div class="Infotmation-title">
-					<span>Стоматологическая клиника heathyteath</span>
+					<span>Стоматологическая клиника heathyteeth</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
 					<a href="#form1"><button>записаться</button></a>
@@ -133,7 +134,40 @@
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
 		</form>
 	</section>
-	<button class="callback"><img src="img/phone.png" width="90px" height="90px"></button>
+	<button class="callback"><a id="popup__toggle"><img src="img/phone.png" width="90px" height="90px"></a></button>
+	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
+<div class="popup__overlay">
+    <div class="popup">
+          <form id="backPhone" name="backPhone">
+		   <div class="callback_main">
+		   <input name="name" type="Name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" required="required" />
+           <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите Ваш телефон" required="required" />
+		   </div>
+           <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
+        </form>
+       <div class="popup__close"><input type="close_button" value="Закрыть"></input></div>
+    </div>
+    <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
+</div>
+<!--Сорри, тут будет косо лежать скрипт, потому с внешней ссылки он читаться не хочет :( простите и не бейте ногами-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+p = $('.popup__overlay')
+$('#popup__toggle').click(function() {
+    p.css('display', 'block')
+})
+p.click(function(event) {
+    e = event || window.event
+    if (e.target == this) {
+        $(p).css('display', 'none')
+    }
+})
+$('.popup__close').click(function() {
+    p.css('display', 'none')
+})
+});
+</script>
 	<script src="js/common.js"></script>	
 	</body>
 </html>
