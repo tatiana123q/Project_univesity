@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="css/signin.css" />
 		<link rel="stylesheet" href="css/registration.css" />
+		<link rel="stylesheet" href="css/media.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
