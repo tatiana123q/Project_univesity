@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
+		<link rel="stylesheet" href="css/signin.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -31,8 +32,26 @@
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
 						<li><a href="registration.php">Регистрация</a></li>
-						<li><a href="personal_area.php"><i class="fa fa-user" aria-hidden="true"></i>
-</a></li>
+						<li><a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
+						<div onclick="show('none')" id="wrap"></div>
+			<div id="window">
+			<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
+				<form id="backSignIn" name="backSignIn">
+			<div class="signin_main">
+				<input name="email" type="Email" id="EmailForm" maxlength="20" placeholder="Введите e-mail" required="required" />
+				<input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите пароль" required="required" />
+			</div>
+				<button id="telButton" type="submit" form="backPhone">Войти</button>
+				</form>	
+			</div>
+						<script type="text/javascript">
+			function show(state){
+
+					document.getElementById('window').style.display = state;			
+					document.getElementById('wrap').style.display = state; 			
+			}
+			
+		</script></li>
 					</ul>
 				</div>
 			</div>
@@ -197,6 +216,7 @@
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
+	<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
         <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
 		   <div class="callback_main">
 		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
@@ -204,7 +224,6 @@
 		   </div>
            <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
         </form>
-       <div class="popup__close"><input type="close_button" value="Закрыть"></input></div>
     </div>
     <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
 </div>
