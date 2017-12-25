@@ -64,7 +64,7 @@
 					<span>Стоматологическая клиника heathyteath</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
-					<button>записаться</button>
+					<a href="#form1"><button>записаться</button></a>
 				</div>
 			</div>
 			</section>
@@ -91,6 +91,7 @@
 		</div>
 	</section>
 	<section class="Form_of_visitation">
+	<p><a id="form1"></a></p>
 		<div class="Form_of_visitation_title">
 			<div>
 				<h2>Запишитесь на прием прямо сейчас</h2>
