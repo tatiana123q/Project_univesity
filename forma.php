@@ -1,4 +1,4 @@
-<form method="POST" action="index2.php" id="feedback-form">
+<form method="POST" action="forma2.php" id="feedback-form">
 			<input required type="text" name="name" id="name" size="25" placeholder="Введите имя" />
 			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" /><br>
 			<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
