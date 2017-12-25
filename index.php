@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="css/signin.css" />
+		<link rel="stylesheet" href="css/media.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -27,6 +28,7 @@
 				</a>
 
 				<div class="Nav">
+				<button class="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 					<ul>
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
@@ -186,7 +188,8 @@
 	<p><a id="form1"></a></p>
 		<div class="Form_of_visitation_title">
 			<div>
-				<h2>Запишитесь на прием прямо сейчас</h2>
+				<h2>Запишитесь 
+				на прием прямо сейчас</h2>
 				<p>Какой-то текст, описывает какая классная у нас клиника, много качественных услуг она предлагает, и еще много много всего</p>
 			</div>
 		</div>

@@ -1,0 +1,48 @@
+.menu_button{
+	padding: 6px;
+	display: none;
+}
+.menu_button:hover{
+	background-color: #f2f2f2;
+}
+@media screen (min-width : 992px) 	{
+	.menu_button{
+	display: absolute;
+}
+
+}
+@media only screen and (max-width : 767px){
+	.HomeInfotmation-title{
+		font-size: 20px;
+	}
+	.menu_button{
+	display: flex;
+	justify-content: space-between;
+	}
+	.Nav ul{
+		display: none;
+	}
+	.Form_of_visitation_title div{
+		padding: 40px;
+	}
+	.Form_of_visitation form{
+		padding: 40px;
+	}
+
+}
+@media only screen and (max-width : 1200px){
+	.Form_of_visitation{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	padding: 70px 0 70px 0;
+	background: #272729;
+	color: white;
+	flex-wrap: wrap;
+	}
+}
+
+
+
+
+

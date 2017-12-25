@@ -11,6 +11,7 @@ section.HomeInfotmation{
 }
 .HomeInfotmation-contacts{
 	display: flex;
+	flex-wrap: wrap;
 }
 .HomeInfotmation-contact{
 	display: flex;
