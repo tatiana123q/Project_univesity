@@ -66,7 +66,7 @@
 	</header>
 	<section class="Form_of_registration">
 		<h2>Регистрация</h2>
-		<form class="Registration">
+		<form class="Registration" method="POST" action="registration2.php" id="registration-form">
 			<div class="col">
 				<p>Ваше имя</p>
 				<input type="text" name="name_registration" id="name_registration" value="" size="25" placeholder="Введите имя" />
@@ -84,7 +84,7 @@
 				<input type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" />
 			</div>
 			<div class="but">
-				<button type="submit" form="feedback-form" value="Submit">Зарегистрироваться</button>
+				<button type="submit" form="registration-form" value="Submit">Зарегистрироваться</button>
 			</div>
 		</form>
 	</section>
