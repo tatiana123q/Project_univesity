@@ -32,26 +32,11 @@
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
 						<li><a href="registration.php">Регистрация</a></li>
-						<li><a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
-						<div onclick="show('none')" id="wrap"></div>
-			<div id="window">
-			<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
-				<form id="backSignIn" name="backSignIn">
-			<div class="signin_main">
-				<input name="email" type="Email" id="EmailForm" maxlength="20" placeholder="Введите e-mail" required="required" />
-				<input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите пароль" required="required" />
-			</div>
-				<button id="telButton" type="submit" form="backPhone">Войти</button>
-				</form>	
-			</div>
-						<script type="text/javascript">
-			function show(state){
-
-					document.getElementById('window').style.display = state;			
-					document.getElementById('wrap').style.display = state; 			
-			}
-			
-		</script></li>
+						<li>
+<?php 
+	require_once('/login.php');
+?>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -132,40 +117,9 @@
 	require_once('/forma.php');
 ?>
 	</section>
-	<button class="callback"><a id="popup__toggle"><img src="img/phone.png" width="90px" height="90px"></a></button>
-	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
-<div class="popup__overlay">
-    <div class="popup">
-	<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
-        <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
-		   <div class="callback_main">
-		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
-           <input required name="phone" type="number" id="telForm" maxlength="20" placeholder="Введите Ваш телефон"/>
-		   </div>
-           <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
-        </form>
-    </div>
-    <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
-</div>
-<!--Сорри, тут будет косо лежать скрипт, потому с внешней ссылки он читаться не хочет :( простите и не бейте ногами-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(window).ready(function(){
-p = $('.popup__overlay')
-$('#popup__toggle').click(function() {
-    p.css('display', 'block')
-})
-p.click(function(event) {
-    e = event || window.event
-    if (e.target == this) {
-        $(p).css('display', 'none')
-    }
-})
-$('.close').click(function() {
-    p.css('display', 'none')
-})
-});
-</script>
+<?php 
+	require_once('/callback.php');
+?>
 	<script src="js/common.js"></script>	
 	</body>
 </html>
