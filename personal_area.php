@@ -88,10 +88,10 @@
 			</div>
 		</div>
 		<form method="POST" action="index2.php" id="feedback-form">
-			<input type="text" name="name" id="name" size="25" placeholder="Введите имя" />
-			<input type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" /><br>
-			<input type="tel" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-			<input type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" /><br>
+			<input required type="text" name="name" id="name" size="25" placeholder="Введите имя" />
+			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" /><br>
+			<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
+			<input required type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" /><br>
 
 			<select name="type_of_visitation">
 				<option selected="selected">Тип посещения</option>
