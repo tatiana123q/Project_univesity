@@ -89,7 +89,18 @@
 			</select>
 			<button>отпавить</button>
 		</div>
+		<h2>Отзывы</h2>
+		<div class="place_for_commit">
+			<div class="user">
+				<img src="img/user.png" width="60px" height="60px">
+				<p>Имя Фамилия</p>
+			</div>
+			<div class="content">
+				<p>Содержание коментария.оваим выапи ывапи ыпаи ывпаи ывре еы впер ывер ы ери рекп в яияв т</p>
+			</div>
+		</div>
 	</section>
+
 	<section class="Form_of_visitation">
 	<p><a id="form1"></a></p>
 		<div class="Form_of_visitation_title">

@@ -12,6 +12,7 @@
 .Reviews h2{
 	text-align: center;
 	padding: 20px;
+	margin-top:20px;
 }
 .foto{
 	padding: 10px;
@@ -36,4 +37,21 @@ textarea{
 }
 .submit select{
 	margin-top: 20px;
+}
+.user{
+	display: flex;
+}
+.user p{
+	padding: 13px;
+}
+.place_for_commit{
+	padding: 1% 53% 4% 27%;
+	margin-top:2%;
+}
+.content{
+	margin: 5px;
+	width: 600px;
+	background-color: white;
+	padding: 10px 30px 10px 30px;
+	box-shadow:  3px 3px 5px rgba(0,0,0,0.1);
 }
