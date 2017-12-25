@@ -241,7 +241,7 @@ p.click(function(event) {
         $(p).css('display', 'none')
     }
 })
-$('.popup__close').click(function() {
+$('.close').click(function() {
     p.css('display', 'none')
 })
 });

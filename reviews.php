@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="css/reviews.css" />
+		<link rel="stylesheet" href="css/signin.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -87,7 +88,7 @@
 					<option >Марченко С.Н</option>
 					<option>Кириенко Р.Т.</option>
 			</select>
-			<button>отпавить</button>
+			<button>Отправить</button>
 		</div>
 		<h2>Отзывы</h2>
 		<div class="place_for_commit">
@@ -135,6 +136,7 @@
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
+	<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
         <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
 		   <div class="callback_main">
 		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
@@ -142,7 +144,6 @@
 		   </div>
            <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
         </form>
-       <div class="popup__close"><input type="close_button" value="Закрыть"></input></div>
     </div>
     <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
 </div>
@@ -160,7 +161,7 @@ p.click(function(event) {
         $(p).css('display', 'none')
     }
 })
-$('.popup__close').click(function() {
+$('.close').click(function() {
     p.css('display', 'none')
 })
 });
