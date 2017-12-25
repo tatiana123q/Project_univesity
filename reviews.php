@@ -32,7 +32,7 @@
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
 						<li><a href="registration.php">Регистрация</a></li>
-						<li>a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
+						<li><a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
 						<div onclick="show('none')" id="wrap"></div>
 			<div id="window">
 			<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
