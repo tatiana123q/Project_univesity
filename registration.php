@@ -1,4 +1,3 @@
-
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -73,7 +72,7 @@
 			</div>
 			<div class="col">
 				<p>Ваша фамилия</p>
-				<input required type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" />
+				<input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" />
 			</div>
 			<div class="col">
 				<p>Телефон</p>
@@ -81,7 +80,7 @@
 			</div>
 			<div class="col">
 				<p>E-mail</p>
-				<input required type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" />
+				<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" />
 			</div>
 			<div class="but">
 				<button type="submit" form="registration-form" value="Submit">Зарегистрироваться</button>
@@ -121,10 +120,10 @@
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
-          <form id="backPhone" name="backPhone">
+        <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
 		   <div class="callback_main">
-		   <input name="name" type="Name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" required="required" />
-           <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите Ваш телефон" required="required" />
+		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
+           <input required name="phone" type="number" id="telForm" maxlength="20" placeholder="Введите Ваш телефон"/>
 		   </div>
            <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
         </form>

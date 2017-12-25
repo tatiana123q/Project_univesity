@@ -1,4 +1,3 @@
-
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -113,10 +112,10 @@
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
-          <form id="backPhone" name="backPhone">
+        <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
 		   <div class="callback_main">
-		   <input name="name" type="Name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" required="required" />
-           <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите Ваш телефон" required="required" />
+		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
+           <input required name="phone" type="number" id="telForm" maxlength="20" placeholder="Введите Ваш телефон"/>
 		   </div>
            <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
         </form>

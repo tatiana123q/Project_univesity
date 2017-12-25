@@ -173,9 +173,9 @@
 		</div>
 		<form method="POST" action="index2.php" id="feedback-form">
 			<input required type="text" name="name" id="name" size="25" placeholder="Введите имя" />
-			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" /><br>
+			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" /><br>
 			<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-			<input required type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" /><br>
+			<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br>
 
 			<select name="type_of_visitation">
 				<option selected="selected">Тип посещения</option>
@@ -197,10 +197,10 @@
 	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
 <div class="popup__overlay">
     <div class="popup">
-          <form id="backPhone" name="backPhone">
+        <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
 		   <div class="callback_main">
-		   <input name="name" type="Name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" required="required" />
-           <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите Ваш телефон" required="required" />
+		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
+           <input required name="phone" type="number" id="telForm" maxlength="20" placeholder="Введите Ваш телефон"/>
 		   </div>
            <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
         </form>

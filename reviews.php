@@ -1,4 +1,3 @@
-
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -9,6 +8,7 @@
 		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
+		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="css/reviews.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
@@ -99,9 +99,9 @@
 		</div>
 		<form method="POST" action="index2.php" id="feedback-form">
 			<input required type="text" name="name" id="name" size="25" placeholder="Введите имя" />
-			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Ведите фамилию" /><br>
+			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" /><br>
 			<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-			<input required type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" /><br>
+			<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br>
 
 			<select name="type_of_visitation">
 				<option selected="selected">Тип посещения</option>
@@ -119,7 +119,40 @@
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
 		</form>
 	</section>
-	<button class="callback"><img src="img/phone.png" width="90px" height="90px"></button>
+	<button class="callback"><a id="popup__toggle"><img src="img/phone.png" width="90px" height="90px"></a></button>
+	<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
+<div class="popup__overlay">
+    <div class="popup">
+        <form method="POST" action="callback2.php" id="backPhone" name="backPhone">
+		   <div class="callback_main">
+		   <input required name="name" type="name" id="NameForm" maxlength="20" placeholder="Введите Ваше имя" />
+           <input required name="phone" type="number" id="telForm" maxlength="20" placeholder="Введите Ваш телефон"/>
+		   </div>
+           <button id="telButton" type="submit" form="backPhone">Подтвердить</button>
+        </form>
+       <div class="popup__close"><input type="close_button" value="Закрыть"></input></div>
+    </div>
+    <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
+</div>
+<!--Сорри, тут будет косо лежать скрипт, потому с внешней ссылки он читаться не хочет :( простите и не бейте ногами-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+p = $('.popup__overlay')
+$('#popup__toggle').click(function() {
+    p.css('display', 'block')
+})
+p.click(function(event) {
+    e = event || window.event
+    if (e.target == this) {
+        $(p).css('display', 'none')
+    }
+})
+$('.popup__close').click(function() {
+    p.css('display', 'none')
+})
+});
+</script>
 	<script src="js/common.js"></script>	
 	</body>
 </html>
