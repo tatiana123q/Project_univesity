@@ -15,6 +15,9 @@
 	.HomeInfotmation-title{
 		font-size: 20px;
 	}
+	.Infotmation-title{
+		font-size: 20px;
+	}
 	.menu_button{
 	display: flex;
 	justify-content: space-between;
