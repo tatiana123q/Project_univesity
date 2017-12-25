@@ -63,7 +63,7 @@
 					<span>Стоматологическая клиника heathyteath</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
-					<button>записаться</button>
+					<a href="#form1"><button>записаться</button></a>
 				</div>
 			</div>
 			</section>
@@ -77,7 +77,7 @@
 				<img src="icons/diagnostika.svg" height="110" width="110">
 				<span>Диагностика зубов</span>
 			</div>
-			<div class="HomeServises-more second"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			<div class="HomeServises-more "><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
 		<div class="description_first style">
@@ -90,7 +90,7 @@
 				<img src="icons/brecets.svg" height="110" width="110">
 				<span>Ортодонт. Исправление прикуса</span>
 			</div>
-			<div class="HomeServises-more fourth"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			<div class="HomeServises-more "><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 			</div>
 		</div>
 		<div class="description_second style">
@@ -163,6 +163,7 @@
 	</div>
 	</section>
 	<section class="Form_of_visitation">
+	<p><a id="form1"></a></p>
 		<div class="Form_of_visitation_title">
 			<div>
 				<h2>Запишитесь на прием прямо сейчас</h2>
