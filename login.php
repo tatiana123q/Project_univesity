@@ -2,13 +2,14 @@
 	<div onclick="show('none')" id="wrap"></div>
 		<div id="window">
 			<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
-				<form id="backSignIn" name="backSignIn">
+				<form method="POST" action="login2.php" id="backSignIn" name="backSignIn">
 					<div class="signin_main">
 						<input name="email" type="Email" id="EmailForm" maxlength="20" placeholder="Введите e-mail" required="required" />
-						<input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите пароль" required="required" />
+						<input name="phone" type="Tel" id="telForm" maxlength="20" placeholder="Введите пароль" required="required" />
 					</div>
-						<button id="telButton" type="submit" form="backPhone">Войти</button>
+						<input id="telButton" type="submit" form="backSignIn" value="Войти"></input>
 				</form>	
+
 		</div>
 		<script type="text/javascript">
 			function show(state){

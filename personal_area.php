@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -71,6 +72,7 @@
 		<div class="Personal_information">
 			<div class="col last_visits">
 				<h3>Последние визиты</h3><hr>
+				<?php echo $_SESSION['name']; ?>
 				<p>какой-то текст с базы даных</p>
 			</div>
 			<div class="col condition_of_teeth">

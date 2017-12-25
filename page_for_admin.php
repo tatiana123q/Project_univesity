@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE>
 <html lang="ru">
 	<head>
@@ -9,6 +10,7 @@
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
 		<link rel="stylesheet" href="css/personal_area.css" />
+		<link rel="stylesheet" href="css/signin.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -70,7 +72,7 @@
 		<div class="Personal_information">
 			<form>
 				<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-				<input required type="email" name="mail" id="mail" size="25" placeholder="Ведите почту" /><br>
+				<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br>
 				<div class="col last_visits">
 					<h3>Последние визиты</h3><hr>
 					<textarea placeholder="Введите визит" rows="6" cols="70"></textarea><br>
