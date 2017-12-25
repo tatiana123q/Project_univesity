@@ -32,8 +32,26 @@
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
 						<li><a href="registration.php">Регистрация</a></li>
-						<li><a href="personal_area.php"><i class="fa fa-user" aria-hidden="true"></i>
-</a></li>
+						<li>a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
+						<div onclick="show('none')" id="wrap"></div>
+			<div id="window">
+			<img class="close" onclick="show('none')" src="img/close.png" height="30" width="30">
+				<form id="backSignIn" name="backSignIn">
+			<div class="signin_main">
+				<input name="email" type="Email" id="EmailForm" maxlength="20" placeholder="Введите e-mail" required="required" />
+				<input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите пароль" required="required" />
+			</div>
+				<button id="telButton" type="submit" form="backPhone">Войти</button>
+				</form>	
+			</div>
+						<script type="text/javascript">
+			function show(state){
+
+					document.getElementById('window').style.display = state;			
+					document.getElementById('wrap').style.display = state; 			
+			}
+			
+		</script></li>
 					</ul>
 				</div>
 			</div>
@@ -62,7 +80,7 @@
 					</div>
 				</div>
 				<div class="Infotmation-title">
-					<span>Стоматологическая клиника heathyteath</span>
+					<span>Стоматологическая клиника heathyteeth</span>
 				</div>
 				<div class="HomeInfotmation-way_to_form">
 					<a href="#form1"><button>записаться</button></a>
