@@ -76,8 +76,7 @@
 				<img src="img/user.png" width="100px" height="100px">
 			</div>
 			<div class="coment">
-				<textarea placeholder="Введите ваш коментарий" rows="6" cols="70">
-				</textarea><br>
+				<textarea placeholder="Введите ваш коментарий" rows="6" cols="70"></textarea><br>
 			</div>
 		</div>
 		<div class="submit">

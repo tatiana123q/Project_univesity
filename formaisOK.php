@@ -13,7 +13,7 @@
 	<body>
 		<div class="confirmation">
 			<p>Ваша заявка принята. Мы с вами свяжемся в ближайшее время</p>
-			<button>Перейти на главную</button>
+			<button><a href="index.php">Перейти на главную</a></button>
 		</div>
 	</body>
 </html>
