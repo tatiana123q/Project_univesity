@@ -69,11 +69,10 @@
 			</section>
 	</header>
 	<section class="Personal_area">
-		<h2>Добро пожаловать в личный кабинет!</h2>
+		<h2><?php echo $_SESSION['name']; ?>, добро пожаловать в личный кабинет!</h2>
 		<div class="Personal_information">
 			<div class="col last_visits">
 				<h3>Последние визиты</h3><hr>
-				<?php echo $_SESSION['name']; ?>
 				<p>какой-то текст с базы даных</p>
 			</div>
 			<div class="col condition_of_teeth">
@@ -84,7 +83,7 @@
 				<h3>Рекомендации</h3><hr>
 				<p>какой-то текст с базы даных</p>
 			</div>
-			<button class="logout"><a href="index.php" onclick="<?php session_destroy();?>">Выйти</a></button>
+			<!--<button class="logout"><a href="index.php" onclick="< ? php session_destroy();?>">Выйти</a></button>-->
 		</div>
 	</section>
 	<section class="Form_of_visitation">

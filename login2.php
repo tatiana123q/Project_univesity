@@ -9,6 +9,10 @@
 		$_SESSION['phone'] = $_REQUEST['phone'];
 		$_SESSION['name'] = $dbConnector->query($query)->fetch_object()->name;
 	} elseif(!$ID_User) {
-		require_once('/loginIsNotOK.php');
+	//hg
 	}
+	 elseif($ID_User) {
+		//лалал
+	}
+	require_once('/personal_area.php');
 ?>
