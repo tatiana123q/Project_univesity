@@ -6,8 +6,5 @@ $dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
 		$query = "SELECT max(ID_User) as id FROM Users;";
 		$user_id = $dbConnector->query($query)->fetch_object()->id;
 
-		$redis = new Redis();
-	    $redis->connect('127.0.0.1', 8888);
-
 	require_once('/personal_area.php');
 ?>

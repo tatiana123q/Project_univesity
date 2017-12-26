@@ -70,21 +70,36 @@
 	</header>
 	<section class="Personal_area">
 		<h2><?php echo $_SESSION['name']; ?>, добро пожаловать в личный кабинет!</h2>
-		<div class="Personal_information">
-			<div class="col last_visits">
-				<h3>Последние визиты</h3><hr>
-				<p>какой-то текст с базы даных</p>
-			</div>
-			<div class="col condition_of_teeth">
-				<h3>Состояние зубов</h3><hr>
-				<p>какой-то текст с базы даных</p>
-			</div>
-			<div class="col recomendations">
-				<h3>Рекомендации</h3><hr>
-				<p>какой-то текст с базы даных</p>
-			</div>
-			<!--<button class="logout"><a href="index.php" onclick="< ? php session_destroy();?>">Выйти</a></button>-->
-		</div>
+			<div class="Personal_information">
+		      <div class="col last_visits">
+		        <h3>Последние визиты</h3><hr>
+		        <div class="description_second style">
+		        <p>14/01/2017. Ренген полости рта.</p>
+		        <p>15/01/2017. Операция по удалению зуба (№8).</p>
+		        <p>22/01/2017. Осмотр после операции.</p>
+		        <p>15/06/2017. Плановый осмотр.</p>
+		        <p>15/12/2017. Плановый осмотр.</p>  
+		    </div>
+		      </div>
+		      <div class="col condition_of_teeth">
+		        <h3>Состояние зубов</h3><hr>
+		        <div class="description_second style">
+		        <p>15/01/2017. Удаление зуба (№8). Остальные зубы в норме.</p>
+		        <p>22/01/2017. Осмотр после операции. Восстановление десен после операции происходить без осложнений.</p>
+		        <p>15/06/2017. Зубы во всей полости рта в норме. Наблюдается небольшое воспаление десен.</p>
+		        <p>15/12/2017. Зубы во всей полости рта в норме. </p>        
+		    </div>
+		      </div>
+		      <div class="col recomendations">
+		        <h3>Рекомендации</h3><hr>
+		        <div class="description_second style">
+		        <p>15/01/2017. Полоскать полость рта отваром трав: ромашка, кора дуба.</p>
+		        <p>15/06/2017. Сменить жесткость зубной щетки.</p>
+		        <p>15/12/2017. Полоскать полость рта средством Listerine.</p>   
+		    </div>
+		      </div>
+		      <!--<button class="logout"><a href="index.php" onclick="< ? php session_destroy();?>">Выйти</a></button>-->
+		    </div>
 	</section>
 	<section class="Form_of_visitation">
 		<div class="Form_of_visitation_title">

@@ -70,22 +70,21 @@
 	<section class="Personal_area">
 		<h2>Добро пожаловать в личный кабинет администратора!<br>Заполните данные о пациентах</h2>
 		<div class="Personal_information">
-			<form>
-				<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-				<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br>
+			<form method="POST" action="page_for_admin2.php" id="page_for_admin_form">
+				<input required type="number" name="user_id" id="user_id" size="25" placeholder="Введите ID пациента" /><br>
 				<div class="col last_visits">
 					<h3>Последние визиты</h3><hr>
-					<textarea placeholder="Введите визит" rows="6" cols="70"></textarea><br>
+					<input id="Last_visitation" name="Last_visitation" placeholder="Введите данные о последних визитах" rows="6" cols="70" size="100" height="40"></input><br>
 				</div>
 				<div class="col condition_of_teeth">
 					<h3>Состояние зубов</h3><hr>
-					<textarea placeholder="Введите информацию о сотоянии зубов" rows="6" cols="70"></textarea><br>
+					<input id="State_of_Teeth" name="State_of_Teeth" placeholder="Введите информацию о сотоянии зубов" rows="6" cols="70" size="100" height="40"></input><br>
 				</div>
 				<div class="col recomendations">
 					<h3>Рекомендации</h3><hr>
-					<textarea placeholder="Введите рекомендации о следующем приеме" rows="6" cols="70"></textarea><br>
+					<input id="Recommendations" name="Recommendations" placeholder="Введите рекомендации о следующем приёме" rows="6" cols="70" size="100" height="40"></input><br>
 			</div>
-			<button>Отправить</button>
+			<button type="submit" form="page_for_admin_form" value="Submit">Отправить</button>
 			</form>
 		</div>
 	</section>
