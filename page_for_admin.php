@@ -68,7 +68,7 @@
 			</section>
 	</header>
 	<section class="Personal_area">
-		<h2>Добро пожаловать в личный кабинет администратора!Заполните данные о пациентах</h2>
+		<h2>Добро пожаловать в личный кабинет администратора!<br>Заполните данные о пациентах</h2>
 		<div class="Personal_information">
 			<form>
 				<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />

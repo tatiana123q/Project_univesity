@@ -1,8 +1,15 @@
 <?php session_start();
- if($_SESSION['ID_User'])
+if($_SESSION['ID_User']==54)
+{
+?><a href="page_for_admin.php"><i class="fa fa-user" aria-hidden="true"></i></a><?
+} 
+
+elseif($_SESSION['ID_User'])
 {
 ?><a href="personal_area.php"><i class="fa fa-user" aria-hidden="true"></i></a><?
-} elseif (!$_SESSION['ID_User']) {
+} 
+
+elseif (!$_SESSION['ID_User']) {
 	?><a onclick="show('block')"><i class="fa fa-user" aria-hidden="true"></i></a>
 		<div onclick="show('none')" id="wrap"></div>
 			<div id="window">
