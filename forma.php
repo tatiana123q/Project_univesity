@@ -12,9 +12,12 @@
 			</select>
 			<select name="type_of_doctor" >
 				<option selected="selected">Выбор врача</option>
-				<option >Синенко А.Л.</option>
-				<option >Марченко С.Н</option>
-				<option>Кириенко Р.Т.</option>
+				<option>Петрова Д.М.</option>
+				<option>Синенко М.А.</option>
+				<option>Кириенко С.Г.</option>
+				<option>Шаповалов Н.И.</option>
+				<option>Марченко В.Г</option>
+				<option>Симаков О.Н.</option>
 			</select><br>
 			<input type="date" name="date" id="date" min="2017-12-17"><br>
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
