@@ -9,9 +9,6 @@
 		$_SESSION['phone'] = $_REQUEST['phone'];
 		$_SESSION['name'] = $dbConnector->query($query)->fetch_object()->name;
 	} elseif(!$ID_User) {
-		# вывести какое то сообщение что пользователя нет
-	} elseif($_SESSION['ID_User']) {
-		# вывести сообщение что пользователь залогинен(какой то пользователь не обьязательно тот чьи данные вводились)
-	} 
-	require_once('/personal_area.php');
+		require_once('/loginIsNotOK.php');
+	}
 ?>
