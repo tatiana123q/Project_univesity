@@ -8,6 +8,8 @@
 		$_SESSION['email'] = $_REQUEST['email'];
 		$_SESSION['phone'] = $_REQUEST['phone'];
 		$_SESSION['name'] = $dbConnector->query($query)->fetch_object()->name;
+		require_once('/personal_area.php');
+
 	} elseif(!$ID_User) {
 		require_once('/loginIsNotOK.php');
 	}
