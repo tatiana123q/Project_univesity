@@ -18,7 +18,7 @@
 				<option value="4">Шаповалов Н.И.</option>
 				<option value="5">Марченко В.Г</option>
 				<option value="6">Симаков О.Н.</option>
-			</select><br>
+			</select><br>	
 			<input type="date" name="date" id="date" min="2017-12-26"><br>
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
 </form>

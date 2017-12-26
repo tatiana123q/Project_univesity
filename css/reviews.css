@@ -20,6 +20,10 @@
 textarea{
 	max-width: 600px;
 }
+.content input{
+	
+	display: none;
+}
 .submit button{
 	margin: 30px 0 30px 0;
 	background-color: #7fc221;

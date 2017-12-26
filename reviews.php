@@ -81,20 +81,27 @@
 			<div class="foto">
 				<img src="img/user.png" width="100px" height="100px">
 			</div>
-			<div class="coment">
-				<textarea placeholder="Введите ваш коментарий" rows="6" cols="70"></textarea><br>
+	<form method="POST" action="reviews2.php" id="feedback-form">
+	<div>
+		<div class="coment">
+				<input name="comment"><textarea placeholder="Введите ваш коментарий" rows="6" cols="70"></textarea></input>
 			</div>
 		</div>
 		<div class="submit">
-			<input type="text" name="name_review" id="name_review" value="" size="25" placeholder="Введите имя и фамилию" />
-			<select name="type_of_doctor review" >
-					<option selected="selected">Выбор врача</option>
-					<option >Синенко А.Л.</option>
-					<option >Марченко С.Н</option>
-					<option>Кириенко Р.Т.</option>
+			<input type="text" name="name" id="name_review" value="" size="25" placeholder="Введите Ваше имя" />
+			<select id="type_of_doctor" name="type_of_doctor" >
+				<option>Выбор врача</option>
+				<option value="1">Петрова Д.М.</option>
+				<option value="2">Синенко М.А.</option>
+				<option value="3">Кириенко С.Г.</option>
+				<option value="4">Шаповалов Н.И.</option>
+				<option value="5">Марченко В.Г</option>
+				<option value="6">Симаков О.Н.</option>
 			</select>
-			<button>Отправить</button>
+			<button type="submit" form="feedback-form" value="Submit">Отправить</button>
 		</div>
+	</div>
+	</form>
 		<h2>Отзывы</h2>
 		<div class="place_for_commit">
 			<div class="user">
