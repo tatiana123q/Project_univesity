@@ -23,6 +23,5 @@
 			}
 </script><?
 }
-	else {?><a onclick="<?php session_destroy();?>"></a><? }
 ?>
 

@@ -84,6 +84,7 @@
 				<h3>Рекомендации</h3><hr>
 				<p>какой-то текст с базы даных</p>
 			</div>
+			<button class="logout"><a href="index.php" onclick="<?php session_destroy();?>">Выйти</a></button>
 		</div>
 	</section>
 	<section class="Form_of_visitation">
