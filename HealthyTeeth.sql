@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 26 2017 г., 19:53
+-- Время создания: Янв 06 2018 г., 21:25
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.6.23
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `Medical_Card` (
   `Last_visitation` text NOT NULL,
   `State_of_Teeth` text NOT NULL,
   `Recommendations` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `Medical_Card`
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `Reviews` (
   `Name` text NOT NULL,
   `Review` text NOT NULL,
   `ID_Doctor` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `Reviews`
@@ -106,7 +106,9 @@ INSERT INTO `Reviews` (`ID_Review`, `Name`, `Review`, `ID_Doctor`) VALUES
 (1, 'Это мое имя', '', 1),
 (2, 'Это мое имя', '', 1),
 (3, 'Это мое имя', '', 1),
-(4, 'Имя', '', 4);
+(4, 'Имя', '', 4),
+(5, 'Alena', '06.01.2018', 2),
+(6, 'gdfkjl', 'gfjkfhcfgjlk.jjfjghkjlk;', 3);
 
 -- --------------------------------------------------------
 
@@ -121,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `PhoneNumber` int(16) NOT NULL,
   `Email` text NOT NULL,
   `Birthday` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `Users`
@@ -181,7 +183,7 @@ ALTER TABLE `CallBack`
 -- AUTO_INCREMENT для таблицы `Medical_Card`
 --
 ALTER TABLE `Medical_Card`
-  MODIFY `ID_Card` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+  MODIFY `ID_Card` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT для таблицы `Request_for_visitation`
 --
@@ -191,12 +193,12 @@ ALTER TABLE `Request_for_visitation`
 -- AUTO_INCREMENT для таблицы `Reviews`
 --
 ALTER TABLE `Reviews`
-  MODIFY `ID_Review` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `ID_Review` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=56;
+  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=55;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

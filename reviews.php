@@ -84,7 +84,7 @@
 	<form method="POST" action="reviews2.php" id="feedback-form">
 	<div>
 		<div class="coment">
-				<input name="comment"><textarea placeholder="Введите ваш коментарий" rows="6" cols="70"></textarea></input>
+				<textarea name="comment" placeholder="Введите ваш коментарий" rows="6" cols="70"></textarea>
 			</div>
 		</div>
 		<div class="submit">
