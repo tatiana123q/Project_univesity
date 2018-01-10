@@ -104,13 +104,118 @@
 	</div>
 	</form>
 		<h2>Отзывы</h2>
+		<!--comment1-->
 		<div class="place_for_commit">
 			<div class="user">
 				<img src="img/user.png" width="60px" height="60px">
-				<p>Имя Фамилия</p>
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Name FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Name"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
 			</div>
 			<div class="content">
-				<p>Содержание коментария.оваим выапи ывапи ыпаи ывпаи ывре еы впер ывер ы ери рекп в яияв т</p>
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Review FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Review"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
+			</div>
+		</div>
+		<!--comment2-->
+		<div class="place_for_commit">
+			<div class="user">
+				<img src="img/user.png" width="60px" height="60px">
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Name FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review-1) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Name"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
+			</div>
+			<div class="content">
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Review FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review-1) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Review"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
+			</div>
+		</div>
+		<!--comment3-->
+		<div class="place_for_commit">
+			<div class="user">
+				<img src="img/user.png" width="60px" height="60px">
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Name FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review-2) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Name"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
+			</div>
+			<div class="content">
+				<p>
+					<?php
+						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
+						$sql = ("SELECT Review FROM Reviews WHERE ID_Review = (SELECT MAX(ID_Review-2) FROM Reviews);");
+						$result =$dbConnector->query($sql);
+						if ($result->num_rows > 0) {
+						    // output data of each row
+						    while($row = $result->fetch_assoc()) {
+						        echo " ". $row["Review"]." ";
+						    }
+						} else {
+						    echo "Отзыв не найдено";
+						}
+					?>
+				</p>
 			</div>
 		</div>
 	</section>

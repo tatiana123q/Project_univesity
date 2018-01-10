@@ -6,5 +6,5 @@ $dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
 		$query = "SELECT max(ID_Revies) as id FROM Reviews;";
 		
 
-	require_once('/formaisOK.php');
+	require_once('/reviewisOK.php');
 ?>
