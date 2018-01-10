@@ -1,5 +1,8 @@
 
 $(document).ready(function() {
+	$(".menu_button").click( function(){
+				$(".Nav ul").slideToggle();
+			});
 
 	$(".container .first ").click( function(){
 				$(".description_first").slideToggle();
@@ -19,9 +22,4 @@ $(document).ready(function() {
 	$(".container .sixth ").click( function(){
 				$(".description_sixth").slideToggle();
 			});
-	$(".menu_button").click( function(){
-				$(".Nav ul").slideToggle();
-			});
-
-
 });

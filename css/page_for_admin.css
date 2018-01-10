@@ -5,6 +5,10 @@ section.Infotmation{
 	height: 110px;
 	opacity: 0.8;
 }
+@media only screen and (max-width : 767px){
+	section.Infotmation{
+	height: 180px;}
+}
 .Personal_area h2{
 	text-align: center;
 	padding: 40px;

@@ -5,6 +5,11 @@ section.Infotmation{
 	height: 110px;
 	opacity: 0.8;
 }
+@media only screen and (max-width : 1200px){
+	section.Infotmation{
+	height: 180px!important;
+}
+}
 .Registration{
 	padding: 20px;
 	max-width: 100%;
@@ -25,6 +30,12 @@ section.Infotmation{
 	justify-content: space-between;
 	font-weight: bold;
 	font-size: 15px;
+}
+.col input{
+	width: 250px;
+}
+.col p{
+	width: 150px;
 }
 .but button{
 	margin-top: 50px;

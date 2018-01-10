@@ -6,7 +6,7 @@
 	background-color: #f2f2f2;
 }
 @media screen (min-width : 992px) 	{
-	.menu_button{
+	.Nav .menu_button{
 	display: absolute;
 }
 
@@ -50,6 +50,10 @@
 	.submit{
 		padding: 5% 23% 0 5%;
 	}
+	.Registration	{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 
 }
 @media only screen and (max-width : 1200px){
@@ -63,10 +67,16 @@
 		flex-wrap: wrap;
 	}
 	.Personal_information .col input{
-		width: 60%;
+		width: 100%;
 	}
 	.content{
 		width: 400px;
+	}
+	section.Infotmation{
+		background-image: url(../img/z.jpg);
+		background-size: cover;
+		max-width: 100%;
+		height: 400px;
 	}
 }
 

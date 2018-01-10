@@ -29,6 +29,7 @@
 					</div>
 				</a>
 				<div class="Nav">
+				<button class="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 					<ul>
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>

@@ -9,9 +9,9 @@
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
-		<link rel="stylesheet" href="css/personal_area.css" />
 		<link rel="stylesheet" href="css/signin.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/page_for_admin.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
@@ -28,6 +28,7 @@
 					</div>
 				</a>
 				<div class="Nav">
+				<button class="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 					<ul>
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
@@ -85,7 +86,7 @@
 					<h3>Рекомендации</h3><hr>
 					<input id="Recommendations" name="Recommendations" placeholder="Введите рекомендации о следующем приёме" rows="6" cols="70" size="100" height="40"></input><br>
 			</div>
-			<button type="submit" form="page_for_admin_form" value="Submit">Отправить</button>
+			<button class="but" type="submit" form="page_for_admin_form" value="Submit">Отправить</button>
 			</form>
 		</div>
 	</section>

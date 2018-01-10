@@ -35,8 +35,8 @@ section.Infotmation{
 	cursor: pointer;
 	opacity: 0.6;
 }
-.doctor p{
-	max-width: 300px;
+.doctor {
+	width: 350px;
 	}
 .Our_doctors h1{
 	text-align: center;

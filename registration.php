@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width"/>
 		<title>HealthyTeeth</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/doctors.css" />
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/form1.css" />
 		<link rel="stylesheet" href="css/callback.css" />
@@ -29,8 +28,9 @@
 					</div>
 				</a>
 				<div class="Nav">
+				<button class="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 					<ul>
-<li><a href="index.php">О нас</a></li>
+						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
 						<li><a href="registration.php">Регистрация</a></li>
