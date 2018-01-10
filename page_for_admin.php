@@ -90,6 +90,7 @@
 			</div>
 			<button class="but" type="submit" form="page_for_admin_form" value="Submit">Отправить</button>
 			</form>
+			<button class="logout"><a href="logout.php">Выйти</a></button>
 		</div>
 	</section>
 	<section class="Form_of_visitation">
