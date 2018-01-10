@@ -37,7 +37,7 @@ textarea{
 .submit{
 	display: flex;
 	flex-direction: column;
-	padding: 0 53% 0 27%;
+	padding: 5% 23% 0 27%;
 }
 .submit select{
 	margin-top: 20px;

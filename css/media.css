@@ -11,6 +11,15 @@
 }
 
 }
+@media only screen and (max-width : 485px){
+.coment textarea{
+		max-width: 280px;
+		padding-right: 10px;
+	}
+.content{
+		width: 300px!important;
+	}
+}
 @media only screen and (max-width : 767px){
 	.HomeInfotmation-title{
 		font-size: 20px;
@@ -31,17 +40,33 @@
 	.Form_of_visitation form{
 		padding: 40px;
 	}
+	.place_for_commit{
+		padding: 10px 10px 0 30px;
+	}
+	.coment textarea{
+		max-width: 350px;
+		padding-right: 10px;
+	}
+	.submit{
+		padding: 5% 23% 0 5%;
+	}
 
 }
 @media only screen and (max-width : 1200px){
 	.Form_of_visitation{
-	margin-top: 30px;
-	display: flex;
-	justify-content: center;
-	padding: 70px 0 70px 0;
-	background: #272729;
-	color: white;
-	flex-wrap: wrap;
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		padding: 70px 0 70px 0;
+		background: #272729;
+		color: white;
+		flex-wrap: wrap;
+	}
+	.Personal_information .col input{
+		width: 60%;
+	}
+	.content{
+		width: 400px;
 	}
 }
 
