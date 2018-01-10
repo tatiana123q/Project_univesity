@@ -34,8 +34,10 @@
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
-						<li><a href="registration.php">Регистрация</a></li>
-						<li>
+						<?php if(empty($_SESSION['ID_User'])) {?>
+							<li><a href="registration.php">Регистрация</a></li>
+						<?}?>
+					<li>
 <?php 
 	require_once('/login.php');
 ?>

@@ -34,8 +34,10 @@
 						<li><a href="index.php">О нас</a></li>
 						<li><a href="doctors.php">Врачи</a></li>
 						<li><a href="reviews.php">Отзывы</a></li>
-						<li><a href="registration.php">Регистрация</a></li>
-						<li>
+						<?php if(empty($_SESSION['ID_User'])) {?>
+							<li><a href="registration.php">Регистрация</a></li>
+						<?}?>
+					<li>
 <?php 
 	require_once('/login.php');
 ?>
@@ -119,7 +121,7 @@
 						        echo " ". $row["Name"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
@@ -136,7 +138,7 @@
 						        echo " ". $row["Review"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
@@ -157,7 +159,7 @@
 						        echo " ". $row["Name"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
@@ -174,7 +176,7 @@
 						        echo " ". $row["Review"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
@@ -195,7 +197,7 @@
 						        echo " ". $row["Name"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
@@ -212,7 +214,7 @@
 						        echo " ". $row["Review"]." ";
 						    }
 						} else {
-						    echo "Отзыв не найдено";
+						    echo "NULL";
 						}
 					?>
 				</p>
