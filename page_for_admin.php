@@ -76,10 +76,7 @@
 		<div class="Personal_information">
 			<form method="POST" action="page_for_admin2.php" id="page_for_admin_form">
 				<input required type="number" name="id_user" id="id_user" size="25" placeholder="Введите ID пациента" /><br></input>
-				<div class="col last_visits">
-					<h3>Последние визиты</h3><hr>
-					<input id="Last_visitation" name="Last_visitation" placeholder="Введите данные о последних визитах" rows="6" cols="70" size="100" height="40"></input><br>
-				</div>
+				<input type="date" name="date_visit" id="data_visit" placeholder="Дата приема" ><br>
 				<div class="col condition_of_teeth">
 					<h3>Состояние зубов</h3><hr>
 					<input id="State_of_Teeth" name="State_of_Teeth" placeholder="Введите информацию о соcтоянии зубов" rows="6" cols="70" size="100" height="40"></input><br>

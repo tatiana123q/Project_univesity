@@ -73,6 +73,7 @@
 	</header>
 	<section class="Personal_area">
 		<h2><?php echo $_SESSION['name']; ?>, добро пожаловать в личный кабинет!</h2>
+			<input class ="inp" type="date" name="date_v" id="data_v" placeholder="Дата приема"><br>
 			<div class="Personal_information">
 		      <div class="col last_visits">
 		        <h3>Последние визиты</h3><hr>
