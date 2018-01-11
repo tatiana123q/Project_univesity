@@ -69,12 +69,7 @@
 						<a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="Infotmation-title">
-					<span>Стоматологическая клиника heathyteeth</span>
-				</div>
-				<div class="HomeInfotmation-way_to_form">
-					<a href="#form1"><button>записаться</button></a>
-				</div>
+				
 			</div>
 			</section>
 	</header>
