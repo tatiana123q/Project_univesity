@@ -1,8 +1,8 @@
 <form method="POST" action="forma2.php" id="feedback-form">
-			<input required type="text" name="name" id="name" size="25" placeholder="Введите имя" />
-			<input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" /><br>
-			<input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" />
-			<input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br>
+			<?php if(empty($_SESSION['ID_User'])) {?> <input required type="text" name="name" id="name" size="25" placeholder="Введите имя" /> <?}?>
+			<?php if(empty($_SESSION['ID_User'])) {?> <input required type="text" name="second_name" id="second_name" size="25" placeholder="Введите фамилию" /><br> <?}?>
+			<?php if(empty($_SESSION['ID_User'])) {?> <input required type="number" name="phone" id="phone" size="25" placeholder="Введите телефон" /> <?}?>
+			<?php if(empty($_SESSION['ID_User'])) {?> <input required type="email" name="mail" id="mail" size="25" placeholder="Введите почту" /><br> <?}?>
 
 			<select id="type_of_visitation" name="type_of_visitation">
 				<option selected="selected">Тип посещения</option>
@@ -19,6 +19,10 @@
 				<option value="5">Марченко В.Г</option>
 				<option value="6">Симаков О.Н.</option>
 			</select><br>	
-			<input type="date" name="date" id="date" min="2017-12-26"><br>
+			<input type="date" name="date" id="date" min= 
+			<?php
+        		echo date('Y-m-d');
+     		?>>
+     		<br>
 			<button type="submit" form="feedback-form" value="Submit">Записаться</button>
 </form>

@@ -73,26 +73,26 @@
 	</header>
 	<section class="Personal_area">
 		<h2><?php echo $_SESSION['name']; ?>, добро пожаловать в личный кабинет!</h2>
-			<input class ="inp" type="date" name="date_v" id="data_v" placeholder="Дата приема"><br>
-			<div class="Personal_information">
-		      <div class="col last_visits">
-		        <h3>Последние визиты</h3><hr>
-		        <div class="description_second style">
-					<?php 
+			<div class ="inp" readonly maxlength="4" size="4" name="date_v" id="data_v">
+				<?php 
 						$dbConnector = new mysqli('localhost', 'root', '', 'HealthyTeeth');
-						$sql = ("SELECT Last_visitation FROM Medical_Card WHERE ID_User = $ID_User;");
+						$sql = ("SELECT Date_of_visitation FROM Medical_Card WHERE ID_User = $ID_User ORDER BY Date_of_visitation DESC;");
 						$result =$dbConnector->query($sql);
 						if ($result->num_rows > 0) {
 						    // output data of each row
-						    while($row = $result->fetch_assoc()) {
-						        echo " ". $row["Last_visitation"]." ";
+						    if($row = $result->fetch_assoc()) {
+								$date = date_create($row["Date_of_visitation"]);
+								date_modify($date, '+6 month');
+								$date_result = date_format($date, 'Y-m-d');
+						        echo "Дата последнего приёма: ".($row["Date_of_visitation"]).".<br> Рекомендуемая дата следующего приёма: ".$date_result ." ";
 						    }
 						} else {
 						    echo "К сожалению, нет данных о последних визитах. Обратитесь к администратору.";
 						}
 					?>
-		    </div>
-		      </div>
+			</div>
+			<br>
+			<div class="Personal_information">
 		      <div class="col condition_of_teeth">
 		        <h3>Состояние зубов</h3><hr>
 		        <div class="description_second style">
@@ -135,7 +135,7 @@
 	<section class="Form_of_visitation">
 		<div class="Form_of_visitation_title">
 			<div>
-				<h2>Запишитесь на прием прямо сейчас</h2>
+				<h2>Запишитесь на приём прямо сейчас</h2>
 				<p>Какой-то текст, описывает какая классная у нас клиника, много качественных услуг она предлагает, и еще много много всего</p>
 			</div>
 		</div>

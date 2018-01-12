@@ -76,7 +76,11 @@
 		<div class="Personal_information">
 			<form method="POST" action="page_for_admin2.php" id="page_for_admin_form">
 				<input required type="number" name="id_user" id="id_user" size="25" placeholder="Введите ID пациента" /><br></input>
-				<input type="date" name="date_visit" id="data_visit" placeholder="Дата приема" ><br>
+				<input type="date" name="date" id="date" placeholder="Дата приема" min= 
+					<?php
+		        		echo date('Y-m-d');
+		     		?>>
+		     	<br>
 				<div class="col condition_of_teeth">
 					<h3>Состояние зубов</h3><hr>
 					<input id="State_of_Teeth" name="State_of_Teeth" placeholder="Введите информацию о соcтоянии зубов" rows="6" cols="70" size="100" height="40"></input><br>

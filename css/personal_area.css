@@ -10,6 +10,11 @@ section.Infotmation{
 	height: 180px!important;
 }
 }
+
+.inp{
+	maxlength: 4;
+	size:4 !important;
+}
 .Personal_area h2{
 	text-align: center;
 	padding: 40px;
