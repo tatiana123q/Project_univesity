@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 11 2018 г., 02:47
+-- Время создания: Янв 12 2018 г., 04:49
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.6.23
 
@@ -39,7 +39,6 @@ CREATE TABLE IF NOT EXISTS `CallBack` (
 
 INSERT INTO `CallBack` (`ID_Request`, `Name`, `PhoneNumber`, `TimeOfRequest`) VALUES
 (1, 'Bvz', 345678, '2017-12-25 16:33:26'),
-(2, 'uyiuj', 5678, '2017-12-25 16:35:58'),
 (3, 'Name', 34567, '2017-12-25 16:42:15'),
 (4, 'Юля', 123456789, '2018-01-10 16:33:31');
 
@@ -52,7 +51,7 @@ INSERT INTO `CallBack` (`ID_Request`, `Name`, `PhoneNumber`, `TimeOfRequest`) VA
 CREATE TABLE IF NOT EXISTS `Medical_Card` (
   `ID_Card` int(11) NOT NULL,
   `ID_User` int(11) NOT NULL,
-  `Last_visitation` text NOT NULL,
+  `Date_of_visitation` date NOT NULL,
   `State_of_Teeth` text NOT NULL,
   `Recommendations` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
@@ -61,9 +60,9 @@ CREATE TABLE IF NOT EXISTS `Medical_Card` (
 -- Дамп данных таблицы `Medical_Card`
 --
 
-INSERT INTO `Medical_Card` (`ID_Card`, `ID_User`, `Last_visitation`, `State_of_Teeth`, `Recommendations`) VALUES
-(1, 58, '14/01/2017. Ренген полости рта. 15/01/2017. Операция по удалению зуба (№8). 22/01/2017. Осмотр после операции. 15/06/2017. Плановый осмотр. 15/12/2017. Плановый осмотр. ', '15/01/2017. Удаление зуба (№8). Остальные зубы в норме. 22/01/2017. Осмотр после операции. Восстановление десен после операции происходить без осложнений. 15/06/2017. Зубы во всей полости рта в норме. Наблюдается небольшое воспаление десен. 15/12/2017. Зубы во всей полости рта в норме. ', '15/01/2017. Полоскать полость рта отваром трав: ромашка, кора дуба.15/06/2017. Сменить жесткость зубной щетки.15/12/2017. Полоскать полость рта средством Listerine.'),
-(2, 54, '15/01/2017. Операция по удалению зуба (№6).', '15/01/2017. Удаление зуба (№6). Остальные зубы в норме.', '15/01/2017. Полоскать полость рта отваром трав: ромашка, кора дуба.');
+INSERT INTO `Medical_Card` (`ID_Card`, `ID_User`, `Date_of_visitation`, `State_of_Teeth`, `Recommendations`) VALUES
+(1, 58, '2018-01-03', '15/01/2017. Удаление зуба (№8). Остальные зубы в норме. 22/01/2017. Осмотр после операции. Восстановление десен после операции происходить без осложнений. 15/06/2017. Зубы во всей полости рта в норме. Наблюдается небольшое воспаление десен. 15/12/2017. Зубы во всей полости рта в норме. ', '15/01/2017. Полоскать полость рта отваром трав: ромашка, кора дуба.15/06/2017. Сменить жесткость зубной щетки.15/12/2017. Полоскать полость рта средством Listerine.'),
+(2, 54, '2018-01-04', '15/01/2017. Удаление зуба (№6). Остальные зубы в норме.', '15/01/2017. Полоскать полость рта отваром трав: ромашка, кора дуба.');
 
 -- --------------------------------------------------------
 
@@ -77,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `Request_for_visitation` (
   `ID_Type_of_visitation` int(11) NOT NULL,
   `ID_Doctor` int(11) NOT NULL,
   `Date_of_visitation` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `Request_for_visitation`
@@ -85,7 +84,8 @@ CREATE TABLE IF NOT EXISTS `Request_for_visitation` (
 
 INSERT INTO `Request_for_visitation` (`ID_Request_for_visitation`, `ID_User`, `ID_Type_of_visitation`, `ID_Doctor`, `Date_of_visitation`) VALUES
 (1, 45, 0, 0, '2017-12-29'),
-(8, 50, 3, 5, '2017-12-30');
+(8, 50, 3, 5, '2017-12-30'),
+(13, 69, 1, 2, '2018-01-31');
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,7 @@ ALTER TABLE `Medical_Card`
 -- AUTO_INCREMENT для таблицы `Request_for_visitation`
 --
 ALTER TABLE `Request_for_visitation`
-  MODIFY `ID_Request_for_visitation` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `ID_Request_for_visitation` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT для таблицы `Reviews`
 --
